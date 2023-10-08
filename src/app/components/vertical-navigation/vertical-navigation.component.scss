@@ -1,0 +1,25 @@
+:host {
+  width: 100%;
+}
+
+.navigationItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+
+  box-sizing: border-box;
+  height: 40px;
+  padding: 8px 8px 8px 12px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  &:hover {
+    background-color: #f9fafb;
+    color: #4f46e5;
+  }
+}
