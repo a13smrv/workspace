@@ -1,5 +1,5 @@
-import { Component } from '@angular/core'
-import { ENavigationItems, TNavigationItems } from './vertical-navigation.types'
+import { Component, Input } from '@angular/core'
+import { TNavigationItems } from './vertical-navigation.types'
 
 @Component({
   selector: 'app-vertical-navigation',
@@ -7,10 +7,5 @@ import { ENavigationItems, TNavigationItems } from './vertical-navigation.types'
   styleUrls: ['./vertical-navigation.component.scss'],
 })
 export class VerticalNavigationComponent {
-  navigationItems: TNavigationItems = [
-    ENavigationItems.Dashboard,
-    ENavigationItems.Planner,
-    ENavigationItems.Budget,
-    ENavigationItems.Notepad,
-  ]
+  @Input({ required: true }) navigationItems: TNavigationItems = []
 }
